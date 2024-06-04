@@ -72,7 +72,7 @@ const ButtonHandler = (props: Props) => {
         Continue
       </Button>
       <p>
-        Already have an account?
+        Already have an account?{" "}
         <Link href="/auth/sign-in" className="font-bold">
           Sign In
         </Link>
