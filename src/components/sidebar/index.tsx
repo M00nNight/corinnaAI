@@ -14,6 +14,7 @@ type Props = {
       }[]
     | null
     | undefined;
+  g;
 };
 
 const Sidebar = ({ domains }: Props) => {
