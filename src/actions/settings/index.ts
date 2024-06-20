@@ -138,3 +138,43 @@ export const onGetAllAccountDomains = async () => {
     console.log(error);
   }
 };
+
+export const onGetCurrentDomain = async (domain: string) => {
+  const user = await currentUser();
+  if (!user) return;
+  try {
+    const userDomain = await client.user.findUnique({
+      where: {
+        clerkId: user.id,
+      },
+      select: {
+        subscription: {
+          select: {
+            plan: true,
+          },
+        },
+        domains: {
+          where: {
+            name: {
+              contains: domain,
+            },
+          },
+          select: {
+            id: true,
+            name: true,
+            icon: true,
+            userId: true,
+            products: true,
+            chatBot: {
+              select: {
+                id: true,
+                welcomeMessage: true,
+                icon: true,
+              },
+            },
+          },
+        },
+      },
+    });
+  } catch (error) {}
+};

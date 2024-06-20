@@ -8,3 +8,14 @@ export const useThemeMode = () => {
     theme,
   };
 };
+
+export const useSettings = (id: string) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<DomainSettingsProps>({
+    resolver: zodResolver(DomainSettingsSchema),
+  });
+};
