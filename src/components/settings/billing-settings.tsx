@@ -42,13 +42,14 @@ const BillingSettings = async (props: Props) => {
       <div className="lg:col-span-2">
         <h3 className="text-xl font-semibold mb-2">Current Plan</h3>
         <p className="text-sm font-semibold">{plan}</p>
-        <p>
-          {plan == "PRo"
-            ? "Start growing your business today"
-            : plan == "ULTIMATE"
-            ? "The Ultimate growth plat that sets you up for success"
-            : "Perfect if you're just started with corinna AI"}
-        </p>
+        <div>
+          {planFeatures.map((feature) => (
+            <div key={feature} className="flex  gap-2 ">
+              <CheckCircle2 className="text-muted-foreground" />
+              <p className="text-muted-foreground">{feature}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
