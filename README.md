@@ -23,4 +23,3 @@ Here're some of the project's best features:
 *   🌓 Light/dark mode toggle
 *   ⚙️ Feature control settings
 *   🔒 Restrict features by plan
-*   
