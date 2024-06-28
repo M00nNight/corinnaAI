@@ -13,7 +13,7 @@ const ChangePassword = (props: Props) => {
   return (
     <div className=" grid grid-cols-1 lg:grid-cols-5 gap-10">
       <div className=" lg:col-span-1">
-        <Section label="Change Password" massage="Reset your password" />
+        <Section label="Change Password" message="Reset your password" />
       </div>
       <form onSubmit={onChangePassword} className="lg:col-span-4">
         <div className="lg:w-[500px] flex flex-col gap-3">

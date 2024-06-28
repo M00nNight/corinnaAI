@@ -18,7 +18,7 @@ const GreetingMessage = ({
     <div className=" flex flex-col gap-2">
       <Section
         label="Greeting message"
-        massage="cutomize your welcome message"
+        message="cutomize your welcome message"
       />
       <div className=" lg:w-[500px]">
         <FormGenerator

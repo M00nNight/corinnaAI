@@ -45,7 +45,7 @@ const CodeSnippet = ({ id }: Props) => {
     <div className="mt-10 flex flex-col gap-5 items-start">
       <Section
         label="Code snippet"
-        massage="Copy and paste this code snippet into the header tag of your website"
+        message="Copy and paste this code snippet into the header tag of your website"
       />
       <div className="bg-cream px-10 rounded-lg inline-block relative">
         <Copy
