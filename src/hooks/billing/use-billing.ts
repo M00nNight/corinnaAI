@@ -20,5 +20,5 @@ export const useStripe = () => {
       console.log(error);
     }
   };
-  return { onStripeConnect, onStripeAccountPending };
+  return { onStripeConnect, onStripeAccountPending }
 };

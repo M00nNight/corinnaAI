@@ -52,8 +52,8 @@ export async function GET() {
       });
       if (approve) {
         const person = await stripe.accounts.createPerson(account.id, {
-          first_name: "Jenny",
-          last_name: "Rosen",
+          first_name: "Zamil",
+          last_name: "Khan",
           relationship: {
             representative: true,
             title: "CEO",
